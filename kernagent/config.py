@@ -35,4 +35,11 @@ def load_settings() -> Settings:
         )
         if os.path.exists(config_path):
             load_dotenv(config_path)
-    return Settings()
+
+    # Explicitly read environment variables AFTER loading config file
+    return Settings(
+        api_key=os.getenv("OPENAI_API_KEY", "not-needed"),
+        base_url=os.getenv("OPENAI_BASE_URL", "http://localhost:1234/v1"),
+        model=os.getenv("OPENAI_MODEL", "kernagent-default-model"),
+        debug=os.getenv("DEBUG", "false").lower() == "true",
+    )

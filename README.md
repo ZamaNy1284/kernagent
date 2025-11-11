@@ -173,7 +173,14 @@ The `ask` command enables interactive Q&A, letting you drill down into specific 
 **Linux / macOS / WSL2:**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Karib0u/kernagent/main/install.sh | bash
+bash <(curl -fsSL https://raw.githubusercontent.com/Karib0u/kernagent/main/install.sh)
+```
+
+**Or download and run (if the above doesn't work):**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Karib0u/kernagent/main/install.sh -o install.sh
+bash install.sh
 ```
 
 **Or manual installation (all platforms):**
