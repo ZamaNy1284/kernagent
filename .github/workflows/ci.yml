@@ -71,6 +71,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'pull_request' || github.ref == 'refs/heads/develop'
     needs: [test, lint]
+    env:
+      TEST_CONTAINER_NAME: kernagent-test-${{ github.run_id }}
 
     steps:
       - name: Checkout code
@@ -84,19 +86,28 @@ jobs:
         with:
           context: .
           push: false
+          platforms: linux/amd64
           tags: kernagent:test
           cache-from: type=gha
           cache-to: type=gha,mode=max
           load: true
 
-      - name: Run pytest inside Docker container
+      - name: Create container for pytest run
         run: |
-          docker run --rm \
-            -v $(pwd)/tests:/workspace/tests:ro \
-            -v $(pwd)/kernagent:/workspace/project/kernagent:ro \
-            --entrypoint bash \
+          docker create --name "$TEST_CONTAINER_NAME" \
+            --entrypoint "" \
             kernagent:test \
-            -c "cd /workspace/project && PYTHONPATH=/workspace/project/kernagent:/workspace/project uv run pytest /workspace/tests -v"
+            python -m pytest /workspace/project/tests -v
+
+      - name: Copy tests into container
+        run: docker cp tests "$TEST_CONTAINER_NAME":/workspace/project/
+
+      - name: Run pytest inside Docker image
+        run: docker start -a "$TEST_CONTAINER_NAME"
+
+      - name: Remove test container
+        if: always()
+        run: docker rm -f "$TEST_CONTAINER_NAME"
 
       - name: Test CLI help command
         run: |
